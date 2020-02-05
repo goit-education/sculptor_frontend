@@ -1,0 +1,45 @@
+.colorContainer {
+  margin-bottom: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+}
+.captionSmall {
+  color: #b9c3c8;
+  padding-right: 0.5rem;
+  font-size: 1.1rem;
+}
+.colors {
+  width: 16rem;
+}
+
+@media only screen and (min-width: 360px) {
+  .colorContainer {
+    justify-content: flex-start;
+  }
+  .captionSmall {
+    width: 12rem;
+  }
+}
+
+@media only screen and (min-width: 500px) {
+  .colorContainer {
+    flex-wrap: nowrap;
+    align-items: center;
+    margin-bottom: 3rem;
+    justify-content: flex-start;
+  }
+  .captionSmall {
+    width: 12rem;
+  }
+  .colors {
+    width: auto;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .colorContainer {
+    margin-bottom: 1rem;
+  }
+}

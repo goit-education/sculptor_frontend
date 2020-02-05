@@ -1,0 +1,248 @@
+/* eslint-disable */
+
+.header {
+  background: linear-gradient(to left, #0c3351, #0c3351) no-repeat 0px 0px;
+  display: flex;
+  justify-content: center;
+  height: 5.5rem;
+  user-select: none;
+}
+
+.header__container {
+  flex: 0 0 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  max-width: 90%;
+}
+
+.navWrap {
+  display: flex;
+  z-index: 1;
+}
+
+.header_result {
+  order: 3;
+}
+
+.header__logo,
+.header__icon > span,
+.logout {
+  font-family: 'Roboto Bold';
+  font-size: 1.4rem;
+}
+
+.header__icon .more {
+  margin-left: 0.6rem;
+  cursor: pointer;
+}
+
+.header__router {
+  flex: 0 0 auto;
+  color: #b9c3c8;
+  line-height: 100%;
+  opacity: 0.6;
+}
+
+.header__router > span {
+  display: none;
+  font-size: 1.2rem;
+}
+
+.header__router .dashboard {
+  margin: 0 1rem 0 0.2rem;
+}
+
+.header__icon {
+  flex: 0 1 auto;
+  fill: #b9c3c8;
+}
+
+.activeLink {
+  opacity: 1;
+  color: #000;
+}
+
+.activeLink > .header__icon {
+  opacity: 1;
+  fill: #fff;
+}
+
+.header__logo {
+  flex: 2 0;
+  padding: 0;
+  margin: 0;
+  line-height: 1;
+  display: inline-block;
+  text-align: center;
+}
+
+.header__image {
+  width: 100px;
+  height: auto;
+}
+
+.logout__container {
+  flex: 0 0 auto;
+  color: #b9c3c8;
+}
+
+.datepicker__container {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+
+/* Transitions */
+.header__router > span,
+.header__icon,
+.logout {
+  transition-duration: 0.3s;
+}
+
+.header__router:hover > .header__icon {
+  fill: #f6e;
+}
+
+.header__router:hover {
+  color: #f6e;
+}
+
+@media only screen and (max-width: 1024px) {
+  .header__container {
+    flex-wrap: wrap;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .header {
+    height: 12rem;
+    background-position-y: -72px;
+  }
+
+  .activeLink > .header__icon {
+    opacity: 0.5;
+    fill: #000;
+  }
+
+  .header__container {
+    height: auto;
+    justify-content: center;
+    /* min-height: 50px; */
+  }
+
+  .navWrap {
+    order: 4;
+    flex: 0 0 87%;
+    justify-content: space-between;
+  }
+
+  .header__image {
+    width: 120px;
+    height: auto;
+  }
+
+  .datepicker__container {
+    position: relative;
+  }
+
+  .header__router .results {
+    margin-right: 1.6rem;
+  }
+
+  .results {
+    order: 3;
+    flex-direction: row-reverse;
+  }
+
+  .header__router {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .header__router > span {
+    display: initial;
+    margin-left: 1rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .header {
+    height: 8rem;
+    background: transparent;
+  }
+
+  .header__container {
+    max-width: 100%;
+    order: 1;
+    flex-wrap: no-wrap;
+  }
+
+  .navWrap {
+    order: 1;
+    flex: 0 0 74%;
+    justify-content: space-between;
+  }
+
+  .datepicker__container {
+    position: relative;
+  }
+
+  .logout__container {
+    order: 3;
+    margin-left: 20px;
+  }
+
+  .header__icon.more {
+    display: none;
+  }
+
+  .header__logo {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1279px) {
+  .header__container {
+    max-width: 100%;
+    order: 1;
+    flex-wrap: no-wrap;
+    justify-content: flex-start;
+  }
+
+  .navWrap {
+    order: 1;
+    flex: 0 0 80%;
+    padding-left: 16px;
+  }
+
+  .header__router .results {
+    margin-right: 0;
+  }
+
+  .results {
+    margin-left: 5px;
+  }
+
+  .header__router .dashboard {
+    margin: 0;
+  }
+
+  .datepicker__container {
+    order: 4;
+    flex: 0 0 80%;
+    justify-self: center;
+    display: flex;
+    justify-content: center;
+  }
+
+  .logout__container {
+    flex-basis: 8%;
+    display: flex;
+    justify-content: flex-end;
+    order: 3;
+    margin-left: 0;
+  }
+}

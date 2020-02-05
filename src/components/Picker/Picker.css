@@ -1,0 +1,9 @@
+.calendar {
+  background-color: #223653;
+  padding-top: 15px;
+  overflow: hidden;
+}
+
+.calendar--disabled {
+  display: none;
+}

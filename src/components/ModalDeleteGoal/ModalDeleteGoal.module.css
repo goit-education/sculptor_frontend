@@ -1,0 +1,81 @@
+.DialogActions {
+  width: 22rem;
+}
+
+.DialogTitle {
+  margin: 4rem auto 0 !important;
+  font-size: 2.4rem;
+  font-weight: 500;
+  font-family: 'Roboto';
+  max-width: 35rem;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.error {
+  font-size: 1rem;
+  margin: 0 auto 4rem;
+  color: red;
+}
+
+.btn1 {
+  display: block;
+  text-transform: capitalize;
+  color: #ffffff;
+  background-color: #fc842c;
+  box-sizing: border-box;
+  border: none;
+  box-shadow: 0px 4px 10px 0px rgba(252, 132, 44, 0.36);
+  width: 133px;
+  height: 38px;
+  cursor: pointer;
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.btn2 {
+  display: block;
+  text-transform: capitalize;
+  color: black;
+  background-color: white;
+  box-sizing: border-box;
+  border: 1px solid #fc842c;
+  box-shadow: 0px 4px 10px 0px rgba(252, 132, 44, 0.36);
+  width: 133px;
+  height: 38px;
+  cursor: pointer;
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 480px) {
+  .DialogActions {
+    width: 35rem;
+  }
+
+  .btn1 {
+    margin: 0 1rem 0 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .DialogActions {
+    width: 40rem;
+  }
+
+  .btn1 {
+    margin: 0 1rem 2rem 0;
+  }
+
+  .btn2 {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 1280px) {
+  .DialogActions {
+    width: 45rem;
+  }
+}

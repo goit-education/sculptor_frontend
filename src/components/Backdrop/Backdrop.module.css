@@ -1,0 +1,27 @@
+.Backdrop {
+  position: fixed;
+  top: 55px;
+  width: 100vw;
+  background-color: transparent;
+  display: flex;
+  align-items: stretch;
+  overflow: scroll;
+  height: 100vh;
+}
+
+.Backdrop::-webkit-scrollbar {
+  width: 0;
+}
+
+@media only screen and (min-width: 500px) {
+  .Backdrop {
+    background-color: rgba(0, 0, 0, 0.507);
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+  }
+}

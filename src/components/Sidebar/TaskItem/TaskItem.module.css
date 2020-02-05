@@ -1,0 +1,19 @@
+.TaskText {
+  padding: 12px;
+  cursor: pointer;
+  font-size: 11px;
+  font-family: 'Roboto';
+  font-style: italic;
+  line-height: 1.2;
+}
+
+.itemWrap {
+  display: flex;
+  justify-content: flex-start;
+  align-content: center;
+  align-items: center;
+}
+
+.BtnDate {
+  border: none;
+}

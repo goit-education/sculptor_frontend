@@ -1,0 +1,97 @@
+.SetGoalModal {
+  background-color: #fff;
+  padding: 3rem 1.5rem;
+  width: 100%;
+  min-height: 125rem;
+  position: relative;
+  user-select: none;
+}
+
+.close_btn {
+  width: 24px;
+  height: 24px;
+  margin: 15px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: none;
+  outline: none;
+  background-color: white;
+  background-image: url('../../assets/images/icons/close/close.svg');
+  block-size: cover;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.hint {
+  color: rgb(184, 178, 178);
+  position: absolute;
+  left: 0;
+  bottom: -15px;
+  font-size: 1.5rem;
+}
+
+.close_btn:hover {
+  background-color: rgb(231, 228, 228);
+}
+
+.title {
+  font-size: 1.5rem;
+  font-family: 'Roboto';
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.buttonsContainer {
+  max-width: 30rem;
+  display: flex;
+  padding-left: 1.4rem;
+  position: relative;
+}
+
+.error {
+  font-size: 1.2rem;
+  margin: 2rem auto;
+  color: red;
+}
+
+@media only screen and (min-width: 480px) {
+  .SetGoalModal {
+    padding: 3rem;
+  }
+}
+
+@media only screen and (min-width: 500px) {
+  .SetGoalModal {
+    box-shadow: 0 0rem 1rem #999;
+    height: auto;
+    width: 55rem;
+    overflow: initial;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .SetGoalModal {
+    width: 60rem;
+    padding: 3.5rem 5rem 3.5rem 3.5rem;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .SetGoalModal {
+    padding: 2rem 3rem;
+    border-radius: 0.1rem;
+    box-shadow: 0 0.5rem 1.5rem #333;
+    width: 75rem;
+    min-height: 80vh;
+    overflow: auto;
+  }
+}
+
+@media only screen and (min-width: 840px) {
+  .SetGoalModal {
+    padding: 3rem 7rem 3rem 3rem;
+    min-width: 85rem;
+    max-width: 120rem;
+  }
+}

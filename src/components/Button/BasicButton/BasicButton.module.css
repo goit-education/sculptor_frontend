@@ -1,0 +1,44 @@
+.btn {
+  display: block;
+  text-transform: capitalize;
+  user-select: none;
+  font-size: 1.4rem;
+  font-weight: 600;
+  transition: all 0.4s;
+  margin: 2rem auto;
+  width: 133px;
+  height: 38px;
+  cursor: pointer;
+}
+
+.btn:last-child {
+  margin-left: 1.4rem;
+}
+
+.orange {
+  color: #ffffff;
+  background-color: #fc842c;
+  box-sizing: border-box;
+  border: none;
+  box-shadow: 0px 4px 10px 0px rgba(252, 132, 44, 0.36);
+}
+
+.white {
+  color: #000000;
+  background-color: #ffffff;
+  box-sizing: border-box;
+  border: 1px solid #fc842c;
+  /* box-shadow: 0px 4px 10px 0px rgba(187, 187, 187, 0.36); */
+}
+
+.btn:disabled {
+  background-color: #cccccc;
+  color: #666666;
+  box-shadow: none;
+}
+
+@media only screen and (min-width: 500px) {
+  .btn:first-child {
+    margin-left: -1.4rem;
+  }
+}

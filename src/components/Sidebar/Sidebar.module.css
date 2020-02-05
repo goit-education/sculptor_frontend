@@ -1,0 +1,68 @@
+.Sidebar {
+  flex: 0 0 260px;
+  align-self: stretch;
+  height: auto;
+  background-image: url('../../assets/images/Mouintains1@1X.png');
+  background-color: #111b2a;
+  background-size: cover, cover;
+  background-blend-mode: soft-light;
+  background-position: center, center;
+  background-repeat: no-repeat, no-repeat;
+  color: #ffffff;
+  z-index: 0;
+  padding-top: 40px;
+  user-select: none;
+}
+
+.Title {
+  width: 260px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 22px;
+  padding-right: 22px;
+  user-select: none;
+}
+
+.logo {
+  width: 140px;
+  height: auto;
+}
+
+.closeSidebar {
+  display: none;
+  position: absolute;
+  top: 15px;
+  left: 7px;
+  margin-left: 0.6rem;
+  cursor: pointer;
+  fill: #c5cdcd;
+}
+
+.icon {
+  fill: #c5cdcd;
+  width: 24px;
+  height: 24px;
+}
+
+@media screen and (min-width: 1023px) {
+  .Link {
+    display: inline-block;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .Sidebar {
+    height: 100%;
+    position: fixed;
+    left: 0;
+    transform: translateX(-100%);
+    transition: 0.5s ease-in-out;
+    z-index: 1000;
+  }
+
+  .Sidebar_show {
+    transform: translateX(0);
+    z-index: 1000;
+  }
+}

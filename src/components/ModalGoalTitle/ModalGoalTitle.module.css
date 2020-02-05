@@ -1,0 +1,53 @@
+.ModalGoalTitle {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+.circle {
+  align-self: center;
+  margin-left: -0.35rem;
+}
+
+.label {
+  display: flex;
+  align-items: center;
+  padding-left: 0.5rem;
+  font-size: 1.4rem;
+  color: rgba(185, 195, 200, 255);
+  width: 11.35rem;
+  font-weight: 500;
+}
+
+.input {
+  border: none;
+  border-bottom: 1px solid #ddd;
+  margin-top: 1rem;
+  width: 100%;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 32px;
+  color: #111;
+  padding: 0 1rem;
+}
+
+@media only screen and (min-width: 500px) {
+  .ModalGoalTitle {
+    flex-wrap: nowrap;
+  }
+
+  .input {
+    margin-top: 0;
+    margin-left: 1rem;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .label {
+    width: 8.35rem;
+  }
+
+  .input {
+    width: 50%;
+  }
+}

@@ -1,0 +1,71 @@
+.checkboxContainer {
+  display: flex;
+  align-items: center;
+  height: 4rem;
+}
+
+label > span:last-of-type {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: #222222;
+  font-size: 1rem;
+}
+
+.checkbox {
+  position: relative;
+  display: inline-block;
+}
+
+.checkbox:hover > .hint {
+  display: block;
+  visibility: visible;
+  opacity: 1;
+}
+
+.checkbox:active {
+  display: block;
+  visibility: visible;
+  opacity: 1;
+}
+
+@keyframes cssAnimation {
+  to {
+    overflow: hidden;
+    display: none;
+    opacity: 0;
+  }
+}
+@-webkit-keyframes cssAnimation {
+  to {
+    visibility: hidden;
+    display: none;
+    opacity: 0;
+  }
+}
+
+.hint {
+  display: none;
+  visibility: hidden;
+  opacity: 0;
+  -moz-animation: cssAnimation 0s ease-in 3s forwards;
+  /* Firefox */
+  -webkit-animation: cssAnimation 0s ease-in 3s forwards;
+  /* Safari and Chrome */
+  -o-animation: cssAnimation 0s ease-in 3s forwards;
+  /* Opera */
+  animation: cssAnimation 0s ease-in 3s forwards;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+.checkbox label {
+  margin: 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .checkboxContainer {
+    border-top: 1px solid rgb(236, 236, 250);
+  }
+}

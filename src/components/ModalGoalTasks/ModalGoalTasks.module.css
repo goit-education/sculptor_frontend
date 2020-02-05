@@ -1,0 +1,141 @@
+.ModalTasks {
+  margin-bottom: 3rem;
+}
+
+.taskContainer {
+  display: flex;
+  border-bottom: 1px solid white;
+  flex-direction: column;
+  width: 100%;
+}
+
+.inputContainer {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  align-items: center;
+}
+
+.weekSelectionContainer {
+  display: flex;
+  flex-wrap: wrap;
+  /* margin: 0.75rem 0 1.5rem; */
+  margin: 0.5rem 0 1rem;
+}
+
+.captionLarge {
+  display: flex;
+  align-items: center;
+  font-size: 1.4rem;
+  color: rgba(185, 195, 200, 255);
+  width: 16rem;
+}
+
+.input {
+  display: block;
+  width: 85%;
+  height: 4rem;
+  background-color: #284060;
+  border: none;
+  color: #fff;
+  padding: 1.5rem;
+  font-style: italic;
+  font-size: 1.2rem;
+  margin-top: 1rem;
+}
+
+.input::placeholder {
+  color: #ccc;
+}
+
+.delBtn {
+  padding: 0 !important;
+}
+.delBtn > span > svg {
+  color: rgba(185, 195, 200, 255);
+  font-size: 15px;
+}
+
+.addBtn {
+  height: 3.6rem;
+  border: none;
+  background-color: transparent;
+  color: #b9c3c8;
+  padding: 1rem;
+  margin: 0 0 0 -1rem;
+  cursor: pointer;
+  font-size: 1.1rem;
+}
+
+.addBtn:hover {
+  background-color: #eee;
+}
+
+.addBtnPlus {
+  font-size: 1.5rem;
+  margin-right: 1rem;
+}
+
+.captionSmall {
+  color: #b9c3c8;
+  padding: 0.5rem 0 0;
+  font-size: 1.1rem;
+  align-self: center;
+  width: 100%;
+}
+
+@media only screen and (min-width: 500px) {
+  .inputContainer {
+    flex-wrap: nowrap;
+  }
+  .input {
+    margin-top: 0;
+  }
+  .weekSelectionContainer {
+    flex-wrap: nowrap;
+  }
+  .captionSmall {
+    padding: 1rem 0;
+    width: 12.12rem;
+  }
+  .ModalTasks {
+    margin-bottom: 2rem;
+  }
+}
+@media only screen and (min-width: 600px) {
+  .captionSmall {
+    padding: 1rem 0;
+    width: 12.5rem;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .ModalTasks {
+    margin-bottom: 1.5rem;
+  }
+  .inputContainer {
+    padding-right: 1rem;
+  }
+  .taskContainer {
+    flex-direction: row;
+    align-items: flex-end;
+  }
+  .captionLarge {
+    width: 15%;
+  }
+  .delBtn > span > svg {
+    margin-right: 1rem;
+  }
+  .weekSelectionContainer {
+    flex-wrap: wrap;
+    margin: 0;
+  }
+  .hiddenOnFullScreen {
+    display: none;
+  }
+  .addBtn {
+    margin: 1.5rem 0 0 -1rem;
+  }
+  .captionSmall {
+    width: 100%;
+  }
+}
